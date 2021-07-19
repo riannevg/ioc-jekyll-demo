@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html>
     <head>   
-        <title>My jeckyll website</title>
+        <title>{{page.title}}</title>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
 
         <link rel='stylesheet' href='/style.css'>
 
+
+        
     </head>
     <body>
         <header>
-            This is a header
+            <h2>You are currently on the {{page.title}}</h2>
         </header>
 
         {{content}}
 
         <footer>
-            This is a footer
+            This is a footer in the main layout
         </footer>
     </body>
 
