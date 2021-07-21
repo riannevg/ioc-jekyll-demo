@@ -29,10 +29,10 @@ card:
 {% for item in page.card %}    
      
       <div class='col-4_xs-8 card'>
-        <div class='bg-image {{item.color}}'>
+        <div class='bg-image '>
           <span>{{item.title}}</span>
         </div>
-        <div class='post-info'>
+        <div class='post-info {{item.color}}'>
           <h3>{{item.title}}</h3>
           <p>{{item.description}}</p>
           <a href='{{item.link}}'>Read More &nbsp; &#8680;</a>
